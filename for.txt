@@ -1,0 +1,20 @@
+-- for loop
+declare
+a number(3);
+begin
+for a in 1..10 loop
+dbms_output.put_line(a);
+end loop;
+end;
+/
+output
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10

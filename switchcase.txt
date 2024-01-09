@@ -1,0 +1,14 @@
+declare
+a char(1):='A';
+begin
+case a
+when 'A' then dbms_output.put_line('A grade');
+when 'B' then dbms_output.put_line('B grade');
+when 'C' then dbms_output.put_line('C grade');
+when 'D' then dbms_output.put_line('D grade');
+when 'E' then dbms_output.put_line('E grade');
+else
+dbms_output.put_line('Fail');
+end case;
+end;
+/

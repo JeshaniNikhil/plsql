@@ -1,0 +1,18 @@
+declare
+a number(3):=10;
+b number(3):=20;
+begin
+dbms_output.put_line('A+B:'||(a+b));
+dbms_output.put_line('A-B:'||(a-b));
+dbms_output.put_line('A*B:'||(a*b));
+dbms_output.put_line('A/B:'||(a*b));
+dbms_output.put_line('A%B:'||mod(a,b));
+end;
+/
+
+output:
+A+B:30
+A-B:-10
+A*B:200
+A/B:200
+A%B:10

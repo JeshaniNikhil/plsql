@@ -1,0 +1,25 @@
+declare
+--global variables
+a number(2):=10;
+b number(2):=20;
+begin
+dbms_output.put_line('Global variable a:'||a);
+dbms_output.put_line('Global variable b:'||b);
+declare
+--local variables
+c number(2):=40;
+d number(2):=50;
+begin
+dbms_output.put_line('local variable c:'||c);
+dbms_output.put_line('global variable d:'||a);
+end;
+--dbms_output.put_line('global variable d:'||d); this is not possible because this local variable
+end;
+/
+
+
+output:
+Global variable a:10
+Global variable b:20
+local variable c:40
+global variable d:10

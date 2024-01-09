@@ -1,0 +1,19 @@
+ declare
+ a number(3);
+ begin
+for a in reverse 1..10 loop
+ dbms_output.put_line(a);
+end loop;
+end;
+/
+output:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1

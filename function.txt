@@ -1,0 +1,21 @@
+create or replace function adder (a1 in number,a2 in number)
+return number
+is
+ans number(5);
+begin
+ans:=a1+a2;
+return ans;
+end;
+/
+/* output 
+Function created
+*/
+ declare
+    out number(10);
+    begin
+    out:=adder(10,20);
+    dbms_output.put_line('Addition is :'||out);
+    end;
+    /
+    output:
+    Addition is :30

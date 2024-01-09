@@ -1,0 +1,24 @@
+declare
+c_id customers.id%type;
+c_name customers.name%type;
+c_age customers.age%type;
+c_sal customers.salary%type;
+cursor c_customers is select id,name,age,salary from customers;
+begin
+open c_customers;
+loop
+fetch c_customers into c_id,c_name,c_age,c_sal;
+exit when c_customers%notfound;
+dbms_output.put_line(c_id||' '||c_name||' '||c_age||' '||c_sal||' ');
+end loop;
+close c_customers;
+end;
+/ 
+
+/* output 
+1 abcd 22 10000
+2 abcd 23 20000
+3 abcd 24 30000
+4 abcd 25 40000
+5 abcd 26 10000
+*/

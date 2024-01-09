@@ -1,0 +1,18 @@
+--create table 
+create table jkl (id number(10) primary key,name varchar2(100));
+--create procedure
+create or replace procedure insertuser (id in number,name in varchar2)
+    is
+    begin
+    insert into jkl values(id,name);
+    end;
+    /
+    /*output: 
+    Procedure created.
+    */
+--call procedure
+begin
+insertuser(201,'dbcd');
+end;
+/
+--PL/SQL procedure successfully completed.

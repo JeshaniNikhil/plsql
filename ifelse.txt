@@ -1,0 +1,13 @@
+declare
+a number:=20;
+begin
+if a=10 then
+dbms_output.put_line('this is if statement');
+else
+dbms_output.put_line('this is else statement');
+end if;
+end;
+/
+
+output:
+this is else statement

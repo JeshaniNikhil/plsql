@@ -1,0 +1,11 @@
+begin
+--dbms_output.put_line('commented'); single line comment
+/*dbms_output.put_line('commented');
+dbms_output.put_line('commented');
+dbms_output.put_line('commented'); multiline comment*/
+dbms_output.put_line('non commented');
+end;
+/
+
+output:
+non comented

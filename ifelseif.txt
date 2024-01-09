@@ -1,0 +1,22 @@
+--if elseif ladder
+declare
+a number:=20;
+begin
+if a=10 then
+dbms_output.put_line('value is 10');
+elsif a=20 then
+dbms_output.put_line('value is 20');
+elsif a=30 then
+dbms_output.put_line('value is 30');
+elsif a=40 then
+dbms_output.put_line('value is 40');
+elsif a=50 then
+dbms_output.put_line('value is 50');
+else
+dbms_output.put_line('no value is matching');
+end if;
+end;
+/
+
+output:
+value is 20
